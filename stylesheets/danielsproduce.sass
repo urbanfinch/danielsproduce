@@ -1,0 +1,136 @@
+@import "compass"
+@import "compass/reset"
+
+/* Colors */
+
+$blue: #0B3263
+$tan: #FDF8E1
+$dark-tan: #DFD0AD
+$brown: #BBAB85 /* text */
+$green: #7B8B70
+$red: #FE0018
+
+/* Fonts */
+
+$helvetica: Helvetica, sans-serif
+$verdana: Verdana, sans-serif
+
+/* Tags */
+
+body, html
+  background-color: $blue
+  background-image: url('/images/background.png')
+  font-family: $verdana
+  font-size: 12px
+  line-height: 16px
+  color: $brown
+  
+  div.container
+    width: 920px
+    margin: 20px auto
+    background-color: $tan
+    border-top: 10px $brown solid
+    border-bottom: 10px $red solid
+    
+    div.left
+      float: left
+      width: 454px
+      min-height: 1px
+      padding: 0px 80px
+      
+    div.right
+      float: left
+      width: 226px
+      padding: 0px 40px
+      
+    header
+      height: 220px
+      background-image: url('/images/wave.png')
+      background-repeat: no-repeat
+      
+      div.left
+        object,
+        img
+          display: block
+          
+      div.right
+        img
+          display: block
+          margin-top: 10px
+          
+    section
+      padding: 20px 0px
+      
+      div.clear
+        clear: both
+        
+      div.left
+        h1
+          margin-bottom: 20px
+          font-family: $helvetica
+          font-size: 28px
+          color: $green
+        
+        p
+          margin-bottom: 20px
+        
+          strong
+            font-weight: bold
+            
+      div.right
+        nav
+          display: block
+          width: 216px
+          margin: 0px auto
+          
+          hr
+            margin: 0px
+            padding: 0px
+            margin-left: 34px
+            height: 3px
+            border: none
+            outline: none
+            background-color: $dark-tan
+          
+          a
+            display: block
+            height: 36px
+            line-height: 36px
+            padding-left: 40px
+            font-family: $helvetica
+            font-size: 18px
+            font-weight: bold
+            text-decoration: none
+            color: $green
+            
+          a:hover,
+          a.selected
+            background-image: url('/images/indicator.png')
+            background-position: 0px 3px
+            background-repeat: no-repeat
+      
+    footer
+      display: block
+      height: 180px
+      clear: both
+      
+      div.left
+        img
+          display: block
+          float: left
+          width: 100px
+          height: 160px
+          margin-left: 18px
+          
+        img:first-child
+          margin-left: 0px
+          
+      div.right
+        width: 306px
+        padding: 0px
+        
+        img
+          display: block
+          width: 306px
+          height: 180px
+          

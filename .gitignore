@@ -1,6 +1,3 @@
 .DS_Store
 .bundle
 .sass-cache
-public/images
-public/incoming images
-public/pdfs
