@@ -13,15 +13,27 @@ class DanielsProduce < Sinatra::Base
   end
   
   get '/:section/?' do
-    @flash = (params[:section] == 'welcome')
-    haml "#{params[:section]}/#{params[:section]}".to_sym
+    begin
+      @flash = (params[:section] == 'welcome')
+      haml "#{params[:section]}/#{params[:section]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/:section/:subsection?' do
-    haml "#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
+    begin
+      haml "#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
+    rescue
+      pass
+    end
   end
   
   get '/*' do
+    redirect '/'
+  end
+  
+  not_found do
     redirect '/'
   end
 end
