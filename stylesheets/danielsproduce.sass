@@ -65,17 +65,44 @@ body, html
         clear: both
         
       div.left
+        nav
+          margin-bottom: 20px
+          
+          a
+            color: $green
+            font-weight: bold
+            
+          a:hover,
+          a.selected
+            color: $brown
+            
         h1
           margin-bottom: 20px
           font-family: $helvetica
           font-size: 28px
           color: $green
-        
+          
+        h2
+          margin-bottom: 10px
+          font-family: $helvetica
+          font-size: 18px
+          color: $green
+          
         p
           margin-bottom: 20px
+          
+          a
+            color: $green
         
           strong
             font-weight: bold
+            
+        ul
+          margin-bottom: 20px
+          
+          li
+            list-style-type: disc
+            list-style-position: inside
             
       div.right
         nav
@@ -105,6 +132,7 @@ body, html
             
           a:hover,
           a.selected
+            color: $brown
             background-image: url('/images/indicator.png')
             background-position: 0px 3px
             background-repeat: no-repeat

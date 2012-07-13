@@ -18,7 +18,7 @@ class DanielsProduce < Sinatra::Base
   end
   
   get '/:section/:subsection?' do
-    haml "#{params[:section]}/#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
+    haml "#{params[:section]}/#{params[:subsection]}/#{params[:subsection]}".to_sym
   end
   
   get '/*' do
