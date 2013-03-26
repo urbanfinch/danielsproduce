@@ -1,1 +1,1 @@
-rvm use ruby-1.8.7-p352@danielsproduce
+rvm use ruby-1.8.7-p352@danielsproduce --create
