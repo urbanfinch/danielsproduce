@@ -15,7 +15,7 @@ class DanielsProduce < Sinatra::Base
   get '/:section/?' do
     begin
       @footer_path = params[:section]
-      @flash = (params[:section] == 'welcome')
+      #@flash = (params[:section] == 'welcome')
       haml "#{params[:section]}/#{params[:section]}".to_sym
     rescue
       pass
